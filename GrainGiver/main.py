@@ -4,22 +4,22 @@ while True:  # Infinite loop to keep the program running until the user chooses 
     print("Welcome to Orphanage app")
     print("1. Donate")
     print("2. Buy grains")
+    def choice_user():
+        #Taking user input and removing any extra spaces by accident
+        choice = input("Enter your choice (1 or 2): ").strip()
     
-    # Taking user input and removing any extra spaces by accident
-    choice = input("Enter your choice (1 or 2): ").strip()
-    
-    if choice == "2":  # If the user chooses to buy grains
-        print("1. Rice")
-        print("2. Wheat")
-        print("3. Sugar")
-        print("4. Milk")
-        print("5. Oil")
-        print("6. Dal")
-        print("7. Pulses")
-        print("8. Salt")
-        print("9. Spices")
-        print("10. Tea")
-        print("11. Coffee")
+        if choice == "2":  # If the user chooses to buy grains
+            print("1. Rice")
+            print("2. Wheat")
+            print("3. Sugar")
+            print("4. Milk")
+            print("5. Oil")
+            print("6. Dal")
+            print("7. Pulses")
+            print("8. Salt")
+            print("9. Spices")
+            print("10. Tea")
+            print("11. Coffee")
         
         # Taking user input for grain selection and number of people
         grain_choice = int(input("Select the grain/spice you want to buy (use the number on the left): "))
